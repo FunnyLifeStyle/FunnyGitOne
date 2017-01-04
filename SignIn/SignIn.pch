@@ -1,0 +1,44 @@
+//
+//  SignIn.pch
+//  SignIn
+//
+//  Created by 财未来 on 16/6/2.
+//  Copyright © 2016年 Funny. All rights reserved.
+//
+#ifdef __OBJC__
+
+#ifndef SignIn_pch
+#define SignIn_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "AFNetworking.h"
+#import "Appirater.h"           //提醒用户打分
+#import "BEMAnalogClockView.h"  //钟表
+#import "FMDB.h"
+#import "GPUImage.h"           //处理图像、着色
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+#import "MBProgressHUD.h"
+#import "PNChart.h"             //画图
+#import "POP.h"                 //跳转、弹出动画
+#import "ReactiveCocoa.h"
+#import "SDWebImage/UIImageView+WebCache.h"
+#import "XHPullRefreshTableViewController.h"
+#import "SWTableViewCell.h"
+#import "TTTAttributedLabel.h"
+#import "UICountingLabel.h"     //实现动态数字变化的UILabel
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define FWidth ([UIScreen mainScreen].bounds.size.width/375.0f)
+#define FHeight ([UIScreen mainScreen].bounds.size.height/667.0f)
+
+#define Color(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)/1.0f]
+
+#endif /* SignIn_pch */
+#endif
